@@ -1,0 +1,22 @@
+#required {
+	color: green;
+	font-size: 80%;
+	font-style: italic;
+	font-family: sans-serif;
+	float: right;
+}
+
+body {
+	display: block;
+}
+label
+{
+	display: block;
+	width: 100%;
+}
+
+/*
+span
+{
+	display: block;
+}
