@@ -7,61 +7,80 @@
 	
 </head>
 <body>
-	<form action="">
+	<form action="POST" id="cform">
 		<span id="required"> * Required Details</span>
 		<span id="heading"> Complete your details to be the first to know about our latest news, offers and new products</span>
 		<label>
-			<span>Title</span>
+			<span id="titles">Title</span>
 			<select>
 				<option value="Ms">Ms</option>
 				<option value="Mrs">Mrs</option>
 				<option value="Mr">Mr</option>
 			</select>
 		</label>
-		<label>
-			<span>First name *</span>
+		<label >
+			<span id="fname">First name *</span>
 			<input type="text" required placeholder="Test">
 		</label>
 		<label>
-			<span>Surname *</span>
+			<span class="regular">Surname *</span>
 			<input type="text" required placeholder="Surname">
 		</label>
 		<fieldset>
-			<span>Gender</span>
+			<span id="gender">Gender</span>
 			<input name="gender" type="radio" value="male"><label for="male">Male</label>
 			<input name="gender" type="radio" value="female"><label for="female">Female</label>
 		</fieldset>
 		<label>
-			<span>Date of Birth</span>
+			<span class="regular">Date of Birth</span>
 			<input type="date">
 		</label>
-		<label>
-			<span>Email address *</span>
+		<label id="mail">
+			<span class="regular">Email address *</span>
 			<input type="email" placeholder="@wrongemail" required>
 		</label>
-		<label>
-			<span>Mobile number</span>
+		<label id="telephone">
+			<span class="regular">Mobile number</span>
 			<input type="text" name="text" placeholder="123456" pattern="[0-9]">
 		</label>
-		<label>
-			<span>House No. & Street</span>
+		<label id="Hnumber">
+			<span class="regular">House No. & Street</span>
 			<input type="text">
 		</label>
-		<label>
-			<span>Adress Line 2</span>
+		<label id="Aline">
+			<span class="regular">Adress Line 2</span>
 			<input type="text">
 		</label>
-		<label>
-		<span>Country *</span>
-			<select required>
-				<option value="UK">United Kingdom</option>
-				<option value="US">United States</option>
-				<option value="IL">Israel</option>
-			</select>
-			
+		<label id="country">
+			<span class="regular">Country *</span>
+				<select required>
+					<option value="UK">United Kingdom</option>
+					<option value="US">United States</option>
+					<option value="IL">Israel</option>
+				</select>
 		</label>
-
-		
+		<label id="town">
+			<span class="regular">Town/City</span>
+			<input type="text">
+		</label>
+		<label id="pcode">
+			<span class="regular">Postcode*</span>
+			<input type="text" pattern="[0-9]" placeholder="000" required>
+		</label>
+		<label>
+		<button class="submit" >FIND ADRESS</button>
+		<p><a href="">Enter your adress manually</a></p>
+		</label>
+		<label class="regular">
+			<span class="regular">Communication preferences</span>
+			<label for="all"><input type="checkbox" name="all" value="all" id="all">All</label>
+			<label for="email"><input type="checkbox" name="email" value="email" id="email">Email</label>
+			<label for="sms"><input type="checkbox" name="sms" value="sms" id="sms">SMS</label>
+			<label for="post"><input type="checkbox" name="post" value="post" id="post">Post</label>
+		</label>
+		<label>
+		<input type="submit" formmethod="GET" id="submit_but" formtarget="_parent" value="UPDATE MY PROFILE">
+		</label>
 	</form>
 	
 </body>

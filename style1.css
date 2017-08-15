@@ -12,13 +12,57 @@ body {
 	margin-bottom: 10px;
 	padding: 10px;
 }
+#cform{
+	width: 70%;
+	position: relative;
+	background-color: gainsboro;
+	}
+
+#heading
+{
+	font-weight: bold;
+	color:black;
+	margin-top: 20px;
+	padding-top: 40px;
+	text-align: center;
+}
+#titles{
+	display: inline;
+
+}
+
+#fname
+{
+	display: inline;
+}
+
+.regular
+{
+	display: inline;
+}
+fieldset
+{
+	border: none;
+	display: inline;
+	width: 100%;
+}
+
+checkbox
+{
+	display: inline;
+}
+
 label
 {
 	display: block;
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	padding: 10px;
+	padding-left: 20px;
+}
+
+checkbox {
+	display: inline;
 }
 
 
@@ -28,9 +72,4 @@ span
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 10px;
-}
-input
-{
-	margin-bottom: 20px;
-	margin-top: 20px;
 }
