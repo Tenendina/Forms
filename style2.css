@@ -1,0 +1,40 @@
+body
+{
+	display: block;
+	font-family: helvetica;
+}
+label{
+	display: block;	
+	margin-top: 10px;
+}
+span
+{
+	display: block;
+	font-weight: bold;
+}
+
+#form2
+{
+	width: auto;
+
+}
+
+h1 {
+	background-color: red;
+	color: white;
+	font-size: 16pt;
+
+}
+
+#container
+{
+	width: 30%;
+}
+input
+{
+	border: none;
+}
+.hrname
+{
+	width: 100%;
+}
