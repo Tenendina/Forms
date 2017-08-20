@@ -27,8 +27,8 @@
 			<input type="text" required placeholder="Surname">
 		</label>
 		<fieldset>
-			<span id="gender">Gender</span>
-			<input name="gender" type="radio" value="male"><label for="male">Male</label>
+			<span id="gender">Gender *</span>
+			<input name="gender" type="radio" value="male" required><label for="male">Male</label>
 			<input name="gender" type="radio" value="female"><label for="female">Female</label>
 		</fieldset>
 		<label>
@@ -65,10 +65,10 @@
 		</label>
 		<label id="pcode">
 			<span class="regular">Postcode*</span>
-			<input type="text" pattern="[0-9]" placeholder="000" required>
+			<input type="text" pattern="[0-9]\d{5-7}" placeholder="00000" required>
 		</label>
 		<label>
-		<button class="submit" >FIND ADRESS</button>
+		<input type="submit" id="fadress" value="FIND MY ADRESS">
 		<p><a href="">Enter your adress manually</a></p>
 		</label>
 		<label class="regular">
